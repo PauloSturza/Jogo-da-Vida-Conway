@@ -8,7 +8,7 @@ function jogoDaVida ( grid, cols, rows ){
         for( let x = -1; x <= 1; x++ ){
           for( let y = -1; y <= 1; y++ ){
             if( x === 0 && y === 0 ) continue;
-            if(i+x>0 && j+y>0 && i+x<cols && j+y<rows){
+             if(i+x>0 && j+y>0 && i+x<cols && j+y<rows){
               total += grid[i+x][j+y]
             }
           }
