@@ -5,7 +5,7 @@ let resolution = 10;
 let rodando = false;
 
 function setup() {
-  createCanvas(900, 1200);
+  createCanvas(1500, 600);
   
   cols = width / resolution;
   rows = height / resolution;
