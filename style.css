@@ -109,13 +109,35 @@ button:active {
     transform: translateY(-1px);
 }
 
+/* Estados dos botões - cores dinâmicas */
+button.active {
+    background: linear-gradient(135deg, #4CAF50, #45a049) !important;
+    color: white !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4) !important;
+}
+
+button.inactive {
+    background: linear-gradient(135deg, #9E9E9E, #757575) !important;
+    color: #e0e0e0 !important;
+    cursor: not-allowed !important;
+    transform: none !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+button.inactive:hover {
+    transform: none !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+button.inactive:hover::before {
+    left: -100% !important;
+}
+
+/* Cores base dos botões (serão sobrescritas pelas classes active/inactive) */
 #startBtn {
     background: linear-gradient(135deg, #4CAF50, #45a049);
     color: white;
-}
-
-#startBtn:hover {
-    background: linear-gradient(135deg, #45a049, #4CAF50);
 }
 
 #pauseBtn {
@@ -123,26 +145,14 @@ button:active {
     color: white;
 }
 
-#pauseBtn:hover {
-    background: linear-gradient(135deg, #f57c00, #ff9800);
-}
-
 #clearBtn {
     background: linear-gradient(135deg, #f44336, #d32f2f);
     color: white;
 }
 
-#clearBtn:hover {
-    background: linear-gradient(135deg, #d32f2f, #f44336);
-}
-
 #randomBtn {
     background: linear-gradient(135deg, #2196F3, #1976D2);
     color: white;
-}
-
-#randomBtn:hover {
-    background: linear-gradient(135deg, #1976D2, #2196F3);
 }
 
 /* Canvas styling */

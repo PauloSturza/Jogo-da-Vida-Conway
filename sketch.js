@@ -5,7 +5,7 @@ let resolution = 10;
 let rodando = false;
 
 function setup() {
-  createCanvas(1000, 600);
+  createCanvas(900, 1200);
   
   cols = width / resolution;
   rows = height / resolution;
@@ -16,8 +16,7 @@ function setup() {
 }
 
 function draw() {
-
-  
+  atualizarBotoes(rodando);
   if(rodando){
     background(255);
     frameRate(10);
