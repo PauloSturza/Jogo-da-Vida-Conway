@@ -20,7 +20,7 @@ O **Jogo da Vida** é um autômato celular desenvolvido pelo matemático John Co
 ##  Como Usar
 
 ### Online
-[🔗 **Acesse a versão online aqui**](https://seu-usuario.github.io/jogo-da-vida-conway) *(adicione o link quando hospedar)*
+[🔗 **Acesse a versão online aqui**](https://paulosturza.github.io/Jogo-da-Vida-Conway/) *(adicione o link quando hospedar)*
 
 ### Localmente
 1. Clone o repositório:
